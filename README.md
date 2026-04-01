@@ -6,58 +6,43 @@
 
 Jettisonize is a development method for AI-agent work that keeps story-scoped context disposable.
 
-The method uses a short lifecycle:
+It is designed for teams that want to keep durable project memory small, explicit, and intentional instead of letting working context accumulate by default.
+
+## Why
+
+AI-agent work often breaks down because too much temporary context stays alive for too long: long sessions, local notes, partial plans, and residue that no longer changes anything.
+
+Jettisonize addresses that problem by treating story-local context as short-lived support for one bounded move. Keep what must survive. Jettison the rest.
+
+## Core Loop
 
 1. `fuel`: define a bounded story with explicit deliverables, `done when`, and guardrails
 2. `ready`: expand the accepted story into an execution bundle
-3. `propel`: do the work inside that bundle until project state changes
+3. `propel`: do the work and keep the handoff state current
 4. `jettison`: promote durable outcomes, then retire the local bundle
 
-The goal is simple: preserve what must survive, and discard the rest before it turns into project memory you have to carry forever.
+A story normally works through a small handoff bundle:
+
+- `story.md`
+- `spec.md`
+- `plan.md`
+- `status.md`
 
 ## Start Here
 
 - Read [`manifesto.md`](./manifesto.md) for the method thesis and operating model.
-- Read [`AGENTS.md`](./AGENTS.md) for the durable repo rules.
-- Read [`codex-bootstrap.md`](./codex-bootstrap.md) if you want the operator-facing install contract.
+- Read [`AGENTS.md`](./AGENTS.md) for the durable operating rules.
+- Read [`status-rules.md`](./status-rules.md) for the durable rules for updating `status.md`.
 - Read [`docs/codex.md`](./docs/codex.md) for the shortest Codex install entrypoint.
-- Read [`status-rules.md`](./status-rules.md) if you want the durable rules for updating `status.md`.
+- Read [`codex-bootstrap.md`](./codex-bootstrap.md) for the operator-facing bootstrap contract.
 
 ## Install For Codex
 
-Fetch and follow:
+For the shortest install path, follow [`/.codex/INSTALL.md`](./.codex/INSTALL.md).
 
-`https://raw.githubusercontent.com/ktrmnm/jettisonize/refs/heads/main/.codex/INSTALL.md`
-
-The install flow uses a temporary clone of `ktrmnm/jettisonize`, then runs the repo-local installer against your current repository.
+The installer uses a temporary clone of `ktrmnm/jettisonize` and applies the bootstrap assets to your current repository.
 
 If you want the optional example config as well, use the `--with-config` install path described in [`codex-bootstrap.md`](./codex-bootstrap.md).
-
-## Public Surface
-
-The first public release treats these as the main entrypoints:
-
-- `README.md`
-- `manifesto.md`
-- `AGENTS.md`
-- `codex-bootstrap.md`
-- `docs/codex.md`
-- `status-rules.md`
-- `templates/booster/`
-- `scripts/`
-- `skills/`
-- optional `.jettison.toml`
-
-This repo also contains source records, research summaries, archived boosters, and working material used to develop the method itself. Those files may still be useful, but they are not the first-use public onboarding path.
-
-## What Ships As Durable Method Contract
-
-- story-first boosters under `boosters/<story-id>/`
-- the execution bundle shape: `story.md`, `spec.md`, `plan.md`, `status.md`
-- repo-authoritative templates under `templates/booster/`
-- operator workflow scripts under `scripts/`
-- repo-local skills under `skills/`
-- explicit lifecycle and acceptance rules in `AGENTS.md`
 
 ## Example Config
 

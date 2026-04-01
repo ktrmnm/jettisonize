@@ -110,6 +110,18 @@ Jettisonize is not:
 - an excuse to discard evidence needed for audit, safety, or reproducibility
 - a justification for keeping every intermediate artifact forever
 
+## Positioning Notes
+
+Jettisonize should be read as a recomposition of familiar development ideas for AI-agent work, not as a total break from prior methods.
+
+It aligns with spec-driven development in valuing clear deliverables, explicit constraints, and bounded plans, but it treats local specs as short-lived story support by default.
+
+It aligns with Agile and Scrum in valuing small units of work, explicit acceptance boundaries, and iterative progress, but it is much stricter about retiring story-local context.
+
+It aligns with Lean and Kanban in keeping work bounded and limiting sprawl, but it applies that discipline to working context as well as work in flight.
+
+It is best understood not as a replacement for those methods, but as a context-management discipline for AI-agent development.
+
 ## Closing
 
 Create bounded context.
