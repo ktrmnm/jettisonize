@@ -1,0 +1,13 @@
+[defaults]
+epic = "local"
+switch_active = "prompt"
+
+[documents]
+language = "en"
+
+[identity]
+provider = "local"
+
+[identity.local]
+prefix = "JT"
+width = "4"
