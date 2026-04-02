@@ -1,11 +1,11 @@
 ---
 name: jettison
-description: Use when a Jettison booster has reached done state and needs final checks, close notes, optional upstream unblock updates, and archive-first retirement.
+description: Use when a Jettisonize booster has reached done state and needs final checks, close notes, optional upstream unblock updates, and archive-first retirement.
 ---
 
-# Jettison
+# `jettison`
 
-Use this skill when a booster is ready to be closed under the Jettison lifecycle.
+Use this skill when a booster is ready to be closed under the Jettisonize lifecycle.
 
 ## Workflow
 

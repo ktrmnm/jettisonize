@@ -1,10 +1,10 @@
-# Jettison Operating Rules
+# Jettisonize Operating Rules
 
 ## Purpose
 
-This repository develops and documents the Jettison method.
+This repository develops and documents the Jettisonize method.
 
-Jettison treats story-scoped working context as disposable. Durable project memory must stay small, explicit, and intentional.
+Jettisonize treats story-scoped working context as disposable. Durable project memory must stay small, explicit, and intentional.
 
 ## Core Rules
 
@@ -75,7 +75,7 @@ During active work:
 - if an active booster fuels a second booster that blocks its next propel step, record that dependency in the first booster's `status.md` and name the immediate task that should resume after the blocker is closed
 - when the blocking booster is closed, append that closure fact to the blocked booster's `status.md`; do not reconstruct the resumed task at close time
 
-### 4. Jettison
+### 4. `jettison`
 
 Before retirement:
 
@@ -112,7 +112,7 @@ Default policy in this repo: archive completed boosters before considering delet
 
 ## State Model
 
-Jettison v1 uses a 2-layer visible state model.
+Jettisonize v1 uses a 2-layer visible state model.
 
 - `Propel Status` lives in `status.md` and describes review / execution readiness
 - `Booster Lifecycle` lives in `status.md` and describes where the booster is in the lifecycle
@@ -182,7 +182,7 @@ The rules should remain understandable without the skills, but the skills are ex
 
 ## Asset Boundary
 
-Jettison v1 uses a 3-layer responsibility split.
+Jettisonize v1 uses a 3-layer responsibility split.
 
 - `AGENTS.md` holds repo-global durable operating rules only.
 - repo-root durable docs and canonical assets define the reviewed contract for this repository.

@@ -84,9 +84,9 @@ The installer manages these repo-local assets:
 
 Rules:
 
-- First install refuses if a managed target path already exists before Jettison is installed.
+- First install refuses if a managed target path already exists before Jettisonize is installed.
 - After a managed install exists, update rewrites the managed files from the source repo.
-- Uninstall removes only the known Jettison-managed paths and leaves unrelated files untouched.
+- Uninstall removes only the known Jettisonize-managed paths and leaves unrelated files untouched.
 
 ## Prerequisites
 
@@ -97,5 +97,5 @@ Rules:
 ## Rollback Expectation
 
 - If install refuses, no partial overwrite should occur.
-- If uninstall succeeds, the Jettison-managed block and known managed files are removed.
+- If uninstall succeeds, the managed block and known Jettisonize-managed files are removed.
 - The installer does not mutate user-global Codex configuration, so rollback stays repo-local.
