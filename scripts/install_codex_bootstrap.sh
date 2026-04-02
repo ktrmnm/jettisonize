@@ -8,8 +8,8 @@ Usage:
   bash scripts/install_codex_bootstrap.sh update <target-repo> [--with-config]
   bash scripts/install_codex_bootstrap.sh uninstall <target-repo>
 
-Installs the Codex-first Jettison bootstrap into an existing target repo using
-repo-local canonical assets from this Jettison source repo.
+Installs the Codex-first Jettisonize bootstrap into an existing target repo using
+repo-local canonical assets from this Jettisonize source repo.
 USAGE
 }
 
@@ -209,7 +209,7 @@ ensure_installable() {
     return 0
   fi
   if [[ -f "$target_agents" ]]; then
-    refuse "Refusing install: target AGENTS.md exists without Jettison-managed markers. Add the managed block manually or move existing guidance outside the block."
+    refuse "Refusing install: target AGENTS.md exists without managed block markers. Add the managed block manually or move existing guidance outside the block."
   fi
   conflicting_path=$(find_conflicting_paths || true)
   if [[ -n "$conflicting_path" ]]; then
@@ -218,11 +218,11 @@ ensure_installable() {
 }
 
 ensure_updatable() {
-  has_managed_block || refuse "Refusing update: target AGENTS.md does not contain Jettison-managed markers."
+  has_managed_block || refuse "Refusing update: target AGENTS.md does not contain the managed block markers."
 }
 
 ensure_uninstallable() {
-  has_managed_block || refuse "Refusing uninstall: target AGENTS.md does not contain Jettison-managed markers."
+  has_managed_block || refuse "Refusing uninstall: target AGENTS.md does not contain the managed block markers."
 }
 
 case "$command_name" in

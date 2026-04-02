@@ -1,9 +1,9 @@
 ---
 name: jettison-hydrate
-description: Use when resuming or handing off an existing Jettison story booster so a fresh agent can reconstruct the story from the booster alone.
+description: Use when resuming or handing off an existing Jettisonize story booster so a fresh agent can reconstruct the story from the booster alone.
 ---
 
-# Jettison Hydrate
+# `hydrate`
 
 Use this skill when work needs to resume on an existing booster or when a new agent is taking over.
 

@@ -31,7 +31,7 @@ If this booster blocked another active booster, that booster's `status.md` must 
 
 List only the constraints that must not be violated during this story.
 
-## Durable Outputs That Must Survive Jettison
+## Durable Outputs That Must Survive `jettison`
 
 List only the outputs that must still matter after the booster is retired.
 

@@ -1,8 +1,8 @@
-# Jettison Operating Rules
+# Jettisonize Operating Rules
 
-This repository uses the Jettison method.
+This repository uses the Jettisonize method.
 
-Jettison treats story-scoped working context as disposable. Durable project memory must stay small, explicit, and intentional.
+Jettisonize treats story-scoped working context as disposable. Durable project memory must stay small, explicit, and intentional.
 
 ## Core Rules
 
@@ -40,7 +40,7 @@ Jettison treats story-scoped working context as disposable. Durable project memo
 
 ## State Model
 
-Jettison v1 uses a 2-layer visible state model.
+Jettisonize v1 uses a 2-layer visible state model.
 
 - `Propel Status` lives in `status.md` and describes review / execution readiness
 - `Booster Lifecycle` lives in `status.md` and describes where the booster is in the lifecycle

@@ -1,9 +1,9 @@
 ---
 name: jettison-ready
-description: Use when a reviewed Jettison story draft is ready to enter execution and the booster needs the canonical execution bundle.
+description: Use when a reviewed Jettisonize story draft is ready to enter execution and the booster needs the canonical execution bundle.
 ---
 
-# Jettison Ready
+# `ready`
 
 Use this skill after a human has reviewed `story.md` and the story is ready to enter execution.
 

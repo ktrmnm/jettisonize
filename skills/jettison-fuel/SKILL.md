@@ -1,11 +1,11 @@
 ---
 name: jettison-fuel
-description: Use when working in this repository to start a new Jettison story-first booster draft from the standard template and ensure the story declares deliverables, done when, and guardrails before execution planning begins.
+description: Use when working in this repository to start a new Jettisonize story-first booster draft from the standard template and ensure the story declares deliverables, done when, and guardrails before execution planning begins.
 ---
 
-# Jettison Fuel
+# `fuel`
 
-Use this skill when a new story needs to be started under the Jettison method.
+Use this skill when a new story needs to be started under the Jettisonize method.
 
 ## Workflow
 
