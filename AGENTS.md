@@ -1,8 +1,6 @@
 # Jettisonize Operating Rules
 
-## Purpose
-
-This repository develops and documents the Jettisonize method.
+This repository uses the Jettisonize method.
 
 Jettisonize treats story-scoped working context as disposable. Durable project memory must stay small, explicit, and intentional.
 
