@@ -75,6 +75,7 @@ cleanup() {
 trap cleanup EXIT
 
 managed_files=(
+  "status-rules.md"
   "skills/jettison-fuel/SKILL.md"
   "skills/jettison-ready/SKILL.md"
   "skills/jettison-hydrate/SKILL.md"
@@ -87,6 +88,7 @@ managed_files=(
   "scripts/ready_booster.sh"
   "scripts/hydrate_booster.sh"
   "scripts/jettison_booster.sh"
+  "scripts/update_status.sh"
 )
 
 if [[ $include_config -eq 1 ]]; then
@@ -107,6 +109,7 @@ render_managed_block() {
   {
     printf '%s\n' "$begin_marker"
     printf '%s\n' "<!-- Managed by scripts/install_codex_bootstrap.sh. Edit outside this block. -->"
+    printf '%s\n' "<!-- Bootstrap source: https://github.com/ktrmnm/jettisonize -->"
     cat "$agents_template"
     printf '%s\n' "$end_marker"
   }

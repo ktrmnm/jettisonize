@@ -68,6 +68,7 @@ Rules:
 The installer manages these repo-local assets:
 
 - `AGENTS.md`
+- `status-rules.md`
 - `skills/jettison-fuel/SKILL.md`
 - `skills/jettison-ready/SKILL.md`
 - `skills/jettison-hydrate/SKILL.md`
@@ -80,6 +81,7 @@ The installer manages these repo-local assets:
 - `scripts/ready_booster.sh`
 - `scripts/hydrate_booster.sh`
 - `scripts/jettison_booster.sh`
+- `scripts/update_status.sh`
 - optional `.jettison.toml`
 
 Rules:
@@ -87,6 +89,7 @@ Rules:
 - First install refuses if a managed target path already exists before Jettisonize is installed.
 - After a managed install exists, update rewrites the managed files from the source repo.
 - Uninstall removes only the known Jettisonize-managed paths and leaves unrelated files untouched.
+- The managed `AGENTS.md` block includes bootstrap provenance pointing to `https://github.com/ktrmnm/jettisonize`.
 
 ## Prerequisites
 
